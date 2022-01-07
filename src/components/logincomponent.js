@@ -23,7 +23,7 @@ export default class Login extends Component {
             {
             try{
                 
-                var response = await axios.post('http://book-backend-project.herokuapp.com/register/login', {
+                var response = await axios.post('https://book-backend-project.herokuapp.com/register/login', {
                     password: this.state.password,
                     email: this.state.email
                 })
@@ -39,7 +39,7 @@ export default class Login extends Component {
             {
             try{
                 
-                 response = await axios.post('http://book-backend-project.herokuapp.com/register/Adminlogin', {
+                 response = await axios.post('https://book-backend-project.herokuapp.com/register/Adminlogin', {
                     password: this.state.password,
                     email: this.state.email
                 })
