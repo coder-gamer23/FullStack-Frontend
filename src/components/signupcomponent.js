@@ -22,7 +22,7 @@ export default class SignUp extends Component {
              {
                 try
                  {
-                     var response = await axios.post('http://book-backend-project.herokuapp.com/register/signup',{
+                     var response = await axios.post('https://book-backend-project.herokuapp.com/register/signup',{
                         username: this.state.username,
                         password: this.state.password,
                         email: this.state.email,
@@ -45,7 +45,7 @@ export default class SignUp extends Component {
              {
                 try 
                 {
-                     response = await axios.post('http://book-backend-project.herokuapp.com/register/Adminsignup', {
+                     response = await axios.post('https://book-backend-project.herokuapp.com/register/Adminsignup', {
                         username: this.state.username,
                         password: this.state.password,
                         email: this.state.email,
