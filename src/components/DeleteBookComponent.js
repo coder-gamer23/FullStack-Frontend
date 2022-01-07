@@ -28,7 +28,7 @@ export default class DeleteBook extends Component {
                         },
                         {
                             headers: {
-                                    'access-token': token
+                                    'access-token': localStorage.getItem('token')
                                      }
                         })
                         if (response.data) 
