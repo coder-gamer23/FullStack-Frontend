@@ -105,7 +105,7 @@ export default class SignUp extends Component {
 
                                 <div className="form-group">
                                     <label>Role</label><br></br>
-                                    <input type="text" className="form-control" placeholder="Role" required value={this.state.role} onChange={(e) => this.setState({ role: e.target.value })} />
+                                    <input type="text" className="form-control" placeholder="Enter admin or user" required value={this.state.role} onChange={(e) => this.setState({ role: e.target.value })} />
                                 </div><br></br>
 
                                 <button type="submit" className="btn btn-primary btn-block">Sign Up</button><br></br>
