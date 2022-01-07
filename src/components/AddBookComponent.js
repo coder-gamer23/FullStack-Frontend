@@ -23,7 +23,7 @@ export default class AddBook extends Component {
             } else {
              try 
                 {
-                    var response = await axios.post('http://book-backend-project.herokuapp.com/book/addbook', {
+                    var response = await axios.post('https://book-backend-project.herokuapp.com/book/addbook', {
                         bookname: this.state.bookname,
                         authorname: this.state.authorname,
                         published: this.state.published,
