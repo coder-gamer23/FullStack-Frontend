@@ -25,7 +25,7 @@ function BookComponent(props) {
             console.log("expired");
             props.history.push('/')
         } else {
-            var response = await axios.get('http://book-backend-project.herokuapp.com/book/getbook',
+            var response = await axios.get('https://book-backend-project.herokuapp.com/book/getbook',
                 {
                     headers: {
                         'access-token': token
