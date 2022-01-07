@@ -82,11 +82,11 @@ export default class Login extends Component {
 
                 <button type="submit" className="btn btn-primary btn-block">Submit</button><br></br>
                 <p className="forgot-password text-right">
-                    {/* Forgot <a href="#">password?</a> */}
+                    
                 </p>
                 <p>
                     Not a registered user?
-                    <Button href="sign-up">Signup</Button>
+                    <Button onClick={(e)=>this.props.history.push('/sign-up')}>Signup</Button>
                 </p>
             </form>
             </div>
