@@ -17,27 +17,30 @@ export default class DeleteBook extends Component {
              console.log(decodedToken);
              if (decodedToken.exp * 1000 <= Date.now()) {
                this.props.history.push('/');
-            }else {
-            try 
-                {
+            }
+            else 
+            {
+                console.log("processing....");
+                 try 
+                    {
                     var response = await axios.delete('https://book-backend-project.herokuapp.com/book/deletebook', {
                         bookname: this.state.bookname
-                },
-                {
-                    headers: {
-                        'access-token': token
-                    }
-                    })
-                    if (response.data) 
-                    {
+                        },
+                        {
+                            headers: {
+                                    'access-token': token
+                                     }
+                        })
+                        if (response.data) 
+                        {
                         console.log("Deleted");
                         this.props.history.push('/bookAdmin');
-                    }
-                } catch (err) {
-                    console.log(err)
-                }
-            }
-        }
+                         }
+                         } catch (err) {
+                                    console.log(err)
+                            }
+                         }
+              }
         return (
             <div className="App" style={{ padding: "5%" }}>
                 <div className="auth-wrapper">
