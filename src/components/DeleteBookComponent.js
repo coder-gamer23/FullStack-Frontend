@@ -24,7 +24,7 @@ export default class DeleteBook extends Component {
                  try 
                     {
                     var response = await axios.delete('https://book-backend-project.herokuapp.com/book/deletebook', {
-                        bookname: this.state.bookname
+                        'bookname': this.state.bookname
                         },
                         {
                             headers: {
