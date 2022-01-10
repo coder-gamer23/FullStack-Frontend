@@ -95,12 +95,12 @@ export default class SignUp extends Component {
 
                                 <div className="form-group">
                                     <label>Phone</label><br></br>
-                                    <input type="text" className="form-control" placeholder="00000" maxLength={10} required value={this.state.phone} onChange={(e) => this.setState({ phone: e.target.value })} />
+                                    <input type="text" className="form-control" placeholder="Max 10 characters" maxLength={10} required value={this.state.phone} onChange={(e) => this.setState({ phone: e.target.value })} />
                                 </div><br></br>
 
                                 <div className="form-group">
                                     <label>Password</label><br></br>
-                                    <input type="password" className="form-control" placeholder="Enter password" minLength={8} maxLength={10} required value={this.state.password} onChange={(e) => this.setState({ password: e.target.value })} />
+                                    <input type="password" className="form-control" placeholder="min character 8 to max 10 character" minLength={8} maxLength={10} required value={this.state.password} onChange={(e) => this.setState({ password: e.target.value })} />
                                 </div><br></br>
 
                                 <div className="form-group">
